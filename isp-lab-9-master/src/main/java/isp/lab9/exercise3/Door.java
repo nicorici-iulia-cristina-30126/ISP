@@ -1,0 +1,25 @@
+
+package isp.lab9.exercise3;
+
+public class Door {
+    private DoorStatus status;
+    
+    
+    public Door(){}
+    public Door(DoorStatus status){
+        this.status = status;
+    }
+
+    public DoorStatus getStatus() {
+        return status;
+    }
+    public void setStatus(DoorStatus status) {
+        this.status = status;
+    }
+    public void lockDoor(){
+        status = DoorStatus.CLOSE;
+    }
+    public void unlockDoor(){
+        status = DoorStatus.OPEN;
+    }
+}
